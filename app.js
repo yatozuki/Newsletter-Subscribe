@@ -12,7 +12,7 @@ function setHeaders(res, filePath) {
     }
   }
   
-  app.use(express.static("public", {
+  app.use(express.static(__dirname + "/public", {
     setHeaders: setHeaders
   }));
 
