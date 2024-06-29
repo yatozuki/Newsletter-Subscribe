@@ -1,7 +1,7 @@
 const express = require("express");
 const https = require("node:https");
 const bodyParser = require("body-parser");
-const env = require('dotenv').config({path: "../.env"});
+const env = require('dotenv').config({path: ".env"});
 const path = require('path');
 
 const app = express();
@@ -19,7 +19,7 @@ function setHeaders(res, filePath) {
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function (req, res){
-    res.sendFile(__dirname + "/signup.html");
+    res.sendFile(__dirname + "/subscribe.html");
 });
 
 app.post("/", function (req, res){
