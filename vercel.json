@@ -16,9 +16,5 @@
         "dest": "app.js"
       }
       
-    ],
-    "env": {
-      "USER_ID": "USER_ID",
-      "API_KEY": "API_KEY"
-    }
+    ]
   }
